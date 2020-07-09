@@ -61,7 +61,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 5ebf65e069a3d3f4bbb68b42e5c4840e, type: 2}
+      objectReference: {fileID: 2100000, guid: 24e73955ba8338f41a24cd3aea0285a6, type: 2}
     - target: {fileID: 54000013480734818, guid: e0b086fbb874df143b6ac8f53cea5424,
         type: 3}
       propertyPath: m_IsKinematic
@@ -71,6 +71,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CollisionDetection
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 54000013480734818, guid: e0b086fbb874df143b6ac8f53cea5424,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114000011129258500, guid: e0b086fbb874df143b6ac8f53cea5424,
         type: 3}

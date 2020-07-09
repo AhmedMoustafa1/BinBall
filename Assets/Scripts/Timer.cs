@@ -62,6 +62,8 @@ public class Timer : MonoBehaviour {
 
     public void StopTimer()
     {
+        text.text = " ";
+
         TimeEnded();
     }
 
