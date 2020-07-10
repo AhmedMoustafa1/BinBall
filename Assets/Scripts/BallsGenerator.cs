@@ -8,6 +8,7 @@ public class BallsGenerator : MonoBehaviour
     public Transform spawnPoint;
     public bool canGenerate;
     private GameObject currentGeneratedBall;
+    public GameObject Container;
     // Start is called before the first frame update
     private int counter;
     void OnEnable()
@@ -19,9 +20,15 @@ public class BallsGenerator : MonoBehaviour
   
     public void GenerateBall()
     {
+        StartCoroutine(GenerateBallAfter());
+    }
+    public IEnumerator GenerateBallAfter()
+    {
+        yield return new WaitForSeconds(1);
         if (canGenerate)
         {
             currentGeneratedBall = Instantiate(ballPrefab, spawnPoint.position, Quaternion.identity);
+            currentGeneratedBall.transform.SetParent(Container.transform);
         }
        
     }

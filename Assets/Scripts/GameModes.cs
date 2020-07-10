@@ -62,7 +62,7 @@ public class GameModes : MonoBehaviour
 
     public void CheckTrainingStatus()
     {
-        if (CurrentGameMode == modes.Training && score.Value == 4)
+        if (CurrentGameMode == modes.Training && score.Value == 5)
         {
             CurrentGameMode = modes.Timed_Game;
             generator.canGenerate = false;
